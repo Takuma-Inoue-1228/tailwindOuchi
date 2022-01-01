@@ -4,96 +4,72 @@
 <head>
   <meta charset="UTF-8">
   <title>訪問看護ステーションおうち</title>
+  <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
 <body>
-  <header class="bg-white dark:bg-gray-800">
-    <nav>
-      <div class="container px-6 py-3 mx-auto lg:flex lg:justify-between lg:items-center">
-        <div class="flex items-center justify-between">
-          <div>
-              <img class="w-3/5" src="https://github.com/Takuma-Inoue-1228/tailwindOuchi/blob/main/img/logo/png/03.png?raw=true">
-          </div>
-          <!-- Mobile menu button -->
-          <div class="flex lg:hidden">
-            <button type="button"
-              class="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400"
-              aria-label="toggle menu">
-              <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
-                <path fill-rule="evenodd"
-                  d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z">
-                </path>
-              </svg>
-            </button>
-          </div>
-        </div>
-        <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
-        <div class="items-center lg:flex">
-          <div class="flex flex-col lg:flex-row lg:mx-6">
-            <a class="my-1 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 lg:mx-4 lg:my-0"
-              href="#">Home</a>
-            <a class="my-1 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 lg:mx-4 lg:my-0"
-              href="#">Shop</a>
-            <a class="my-1 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 lg:mx-4 lg:my-0"
-              href="#">Contact</a>
-            <a class="my-1 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 lg:mx-4 lg:my-0"
-              href="#">About</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <div class="container px-6 py-16 lg:mx-auto">
-      <div class="items-center lg:flex">
+  <header class="w-full mx-auto">
+    <img class="w-3/5" src="https://github.com/Takuma-Inoue-1228/tailwindOuchi/blob/main/img/logo/png/03.png?raw=true">
+    </div>
+  </header>
+
+  <section class="container w-full mx-auto">
+    <div class="container px-6 py-16">
+      <div class="items-center lg:flex lg:mx-auto">
         <div class="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2">
-          <img class="w-full h-full lg:max-w-2xl" src="https://github.com/Takuma-Inoue-1228/tailwindOuchi/blob/main/img/photo/staff/_A7_2136_web.jpg?raw=true">
+          <img class="w-full h-full lg:max-w-2xl"
+            src="https://github.com/Takuma-Inoue-1228/tailwindOuchi/blob/main/img/photo/staff/_A7_2136_web.jpg?raw=true">
         </div>
         <div class="w-full lg:w-1/2">
           <div class="lg:max-w-xl  lg:mx-auto sm:text-center p-8">
-            <h1 class="text-2xl font-semibold text-gray-800 uppercase dark:text-white lg:text-3xl">2021/11/1 新規OPEN</h1>
-            <p class="mt-2 text-gray-600 dark:text-gray-400 text-left">
+            <h1 class="font-semibold text-gray-800 uppercase dark:text-white text-3xl md:mb-5">2021/11/1 新規OPEN</h1>
+            <p class="mt-2 text-gray-600 dark:text-gray-400 text-left text-xl md:text-2xl">
               ホームページを閲覧いただきありがとうございます。訪問看護ステーションおうちでは住み慣れたご自宅で安心して日常生活が送れるよう、1人1人の意思を尊重し、温かい看護を提供いたします。ご依頼やご相談など、お気軽にご連絡ください。
             </p>
           </div>
         </div>
       </div>
-    </div>
-  </header>
+  </section>
 
-  <section class="text-gray-600 body-font ">
+  <section class="text-gray-600 body-font mb-20">
     <div class="container px-5 py-12 mx-auto">
       <div class="flex flex-col text-center w-full mb-20">
-        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">理念</h1>
-        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+        <h1 class="font-semibold text-gray-800 uppercase dark:text-white text-3xl md:mb-5">理念</h1>
+        <p class="mt-2 text-gray-600 dark:text-gray-400 text-left text-xl md:text-2xl">
           訪問看護ステーションおうちでは地域で暮らす方々が安心して過ごせるよう、人との出会いを大切にし、ご家族の生活環境や意思を尊重して、丁寧に温かい看護を提供します。</p>
       </div>
       <div class="flex flex-col text-center w-full">
-        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">基本方針</h1>
-        <li class="lg:w-2/3 mx-auto leading-relaxed text-base">
+        <h1 class="font-semibold text-gray-800 uppercase dark:text-white text-3xl md:mb-5">基本方針</h1>
+        <li class="mt-2 text-gray-600 dark:text-gray-400 text-left text-xl md:text-2xl md:mb-5">
           利用者様およびご家族一人ひとりの声に耳を傾け、個々の価値観を尊重して、療養生活が送れるよう支援します。
-        <li class="lg:w-2/3 mx-auto leading-relaxed text-base">
+        <li class="mt-2 text-gray-600 dark:text-gray-400 text-left text-xl md:text-2xl md:mb-5">
           地域の医療機関、主治医、各事業所と連携を図り、地域からの信頼が得られるように努力します。
-        <li class="lg:w-2/3 mx-auto leading-relaxed text-base">
+        <li class="mt-2 text-gray-600 dark:text-gray-400 text-left text-xl md:text-2xl md:mb-5">
           職員が生き生きと働き、職員間で学び合う、チームワークの良い職場づくりに努めます。
       </div>
     </div>
   </section>
 
-  <section class="bg-white dark:bg-gray-800 py-12 ">
+  <section class="bg-white dark:bg-gray-800 pb-12 ">
+    <div class="flex flex-col text-center w-full">
+      <h1 class="font-semibold text-gray-800 uppercase dark:text-white text-3xl md:mb-5">職員</h1>
+    </div>
     <div class="container px-6 pb-8 mx-auto">
       <div class="items-center lg:flex">
         <div class="mt-8 lg:mt-0 lg:w-1/2">
           <div class="flex items-center justify-center">
-            <div class="max-w-lg">
-              <img class="object-cover object-center w-full h-64 rounded-md shadow" src="https://github.com/Takuma-Inoue-1228/tailwindOuchi/blob/main/img/photo/staff/_A7_2114_web.jpg?raw=true">
+            <div class="max-w-lg mx-auto">
+              <img class="object-cover object-center w-2/3 rounded-md shadow"
+                src="https://github.com/Takuma-Inoue-1228/tailwindOuchi/blob/main/img/photo/staff/_A7_2114_web.jpg?raw=true">
               <h3 class="text-lg font-medium text-gray-700 dark:text-gray-200">Patterson Johnson</h3>
               <span class="mt-1 font-medium text-gray-600 dark:text-gray-300">代表・看護師</span>
             </div>
           </div>
         </div>
         <div class="lg:w-1/2">
-          <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100">はじめまして。代表・管理者の看護師貫井です。</h2>
-          <p class="mt-4 text-gray-500 dark:text-gray-400 .max-w-xl">
+          <p class="mt-2 text-gray-600 dark:text-gray-400 text-left text-xl md:text-2xl">
+            はじめまして。代表・管理者の看護師貫井です。<br>
             「訪問看護ステーションおうち」では、人と人の出会いを大切にし、ご家庭の生活環境や意思を尊重して、丁寧に、温かい看護を提供することを目標にしています。 小さなことでも、お気軽にご相談ください。
           </p>
         </div>
@@ -101,14 +77,16 @@
       <div class="flex items-center justify-center">
         <div class="grid gap-8 mt-8 grid-cols-2">
           <div class="w-full max-w-xs text-center">
-            <img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="https://github.com/Takuma-Inoue-1228/tailwindOuchi/blob/main/img/photo/staff/_A7_2111_web.jpg?raw=true">
+            <img class="object-cover object-center w-full mx-auto rounded-lg"
+              src="https://github.com/Takuma-Inoue-1228/tailwindOuchi/blob/main/img/photo/staff/_A7_2111_web.jpg?raw=true">
             <div class="mt-2">
               <h3 class="text-lg font-medium text-gray-700 dark:text-gray-200">田中 裕太</h3>
               <span class="text-sm mt-1 font-medium text-gray-600 dark:text-gray-300">看護師</span>
             </div>
           </div>
           <div class="w-full max-w-xs text-center">
-            <img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="https://github.com/Takuma-Inoue-1228/tailwindOuchi/blob/main/img/photo/staff/_A7_2119_web.jpg?raw=true">
+            <img class="object-cover object-center w-full  mx-auto rounded-lg"
+              src="https://github.com/Takuma-Inoue-1228/tailwindOuchi/blob/main/img/photo/staff/_A7_2119_web.jpg?raw=true">
             <div class="mt-2">
               <h3 class="text-lg font-medium text-gray-700 dark:text-gray-200">Patterson Johnson</h3>
               <span class="mt-1 font-medium text-gray-600 dark:text-gray-300">Software Engineer</span>
@@ -122,20 +100,22 @@
   <section class="text-gray-600 body-font">
     <div class="container px-5 py-12 mx-auto">
       <div class="flex flex-col text-center w-full">
-        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">特徴</h1>
+        <h1 class="font-semibold text-gray-800 uppercase dark:text-white text-3xl md:mb-5">特徴</h1>
         <div class="flex flex-wrap">
           <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-            <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">24時間対応</h2>
-            <p class="leading-relaxed text-base mb-4">体調の急変や緊急時には、医師や関係機関と連携を取りながら電話対応・緊急訪問など迅速に対応いたします。</p>
+            <h2 class="text-lg sm:text-3xl text-gray-900 font-medium title-font mb-2">24時間対応</h2>
+            <p class="mt-2 text-gray-600 dark:text-gray-400 text-left text-xl md:text-2xl">
+              体調の急変や緊急時には、医師や関係機関と連携を取りながら電話対応・緊急訪問など迅速に対応いたします。</p>
           </div>
           <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-            <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">知識と経験豊富な看護スタッフ</h2>
-            <p class="leading-relaxed text-base mb-4">知識と経験豊富な看護スタッフ幅広い分野での知識・経験・技術をもった看護師が在籍していますので小児や障害をお持ちの方も対応できます。
+            <h2 class="text-lg sm:text-3xl text-gray-900 font-medium title-font mb-2">知識と経験豊富な看護スタッフ</h2>
+            <p class="mt-2 text-gray-600 dark:text-gray-400 text-left text-xl md:text-2xl">
+              知識と経験豊富な看護スタッフ幅広い分野での知識・経験・技術をもった看護師が在籍していますので小児や障害をお持ちの方も対応できます。
             </p>
           </div>
           <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-            <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">男性看護師在籍 精神看謹対応</h2>
-            <p class="leading-relaxed text-base mb-4">男性看護師在籍
+            <h2 class="text-lg sm:text-3xl text-gray-900 font-medium title-font mb-2">男性看護師在籍 精神看謹対応</h2>
+            <p class="mt-2 text-gray-600 dark:text-gray-400 text-left text-xl md:text-2xl">男性看護師在籍
               精神看謹対応精神科領域を経験したスタッフも在籍していますので、精神疾患をお持ちの方やそのご家族の方々へ、専門スタッフがサポートいたします。</p>
           </div>
         </div>
@@ -146,15 +126,15 @@
   <section class="text-gray-600 body-font">
     <div class="container px-5 py-24 mx-auto">
       <div class="flex flex-wrap w-full mb-8">
-        <div class="w-full mb-6 lg:mb-0">
-          <h1 class="sm:text-4xl text-5xl font-bold font-medium title-font mb-2 text-gray-900">List Product</h1>
-          <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+        <div class="w-full mb-6 lg:mb-0 text-center">
+          <h1 class="font-semibold text-gray-800 uppercase dark:text-white text-3xl md:mb-5">写真</h1>
         </div>
       </div>
       <div class="flex flex-wrap -m-4">
         <div class="lg:w-1/3 p-4 w-1/2">
           <a class="block relative h-48 rounded overflow-hidden">
-            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://star-name-registry.com/blog/images/d/0/1/f/a/d01faec7ef04415eec34c1bfe61913e167fb26c7-snr-blog-37-resized.jpg">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+              src="https://star-name-registry.com/blog/images/d/0/1/f/a/d01faec7ef04415eec34c1bfe61913e167fb26c7-snr-blog-37-resized.jpg">
           </a>
           <div class="mt-4">
             <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
@@ -164,7 +144,8 @@
         </div>
         <div class="lg:w-1/3 p-4 w-1/2">
           <a class="block relative h-48 rounded overflow-hidden">
-            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://star-name-registry.com/blog/images/d/0/1/f/a/d01faec7ef04415eec34c1bfe61913e167fb26c7-snr-blog-37-resized.jpg">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+              src="https://star-name-registry.com/blog/images/d/0/1/f/a/d01faec7ef04415eec34c1bfe61913e167fb26c7-snr-blog-37-resized.jpg">
           </a>
           <div class="mt-4">
             <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
@@ -174,7 +155,8 @@
         </div>
         <div class="lg:w-1/3 p-4 w-1/2">
           <a class="block relative h-48 rounded overflow-hidden">
-            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://star-name-registry.com/blog/images/d/0/1/f/a/d01faec7ef04415eec34c1bfe61913e167fb26c7-snr-blog-37-resized.jpg">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+              src="https://star-name-registry.com/blog/images/d/0/1/f/a/d01faec7ef04415eec34c1bfe61913e167fb26c7-snr-blog-37-resized.jpg">
           </a>
           <div class="mt-4">
             <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
@@ -184,7 +166,8 @@
         </div>
         <div class="lg:w-1/3 p-4 w-1/2">
           <a class="block relative h-48 rounded overflow-hidden">
-            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://star-name-registry.com/blog/images/d/0/1/f/a/d01faec7ef04415eec34c1bfe61913e167fb26c7-snr-blog-37-resized.jpg">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+              src="https://star-name-registry.com/blog/images/d/0/1/f/a/d01faec7ef04415eec34c1bfe61913e167fb26c7-snr-blog-37-resized.jpg">
           </a>
           <div class="mt-4">
             <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
@@ -194,7 +177,8 @@
         </div>
         <div class="lg:w-1/3 p-4 w-1/2">
           <a class="block relative h-48 rounded overflow-hidden">
-            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://star-name-registry.com/blog/images/d/0/1/f/a/d01faec7ef04415eec34c1bfe61913e167fb26c7-snr-blog-37-resized.jpg">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+              src="https://star-name-registry.com/blog/images/d/0/1/f/a/d01faec7ef04415eec34c1bfe61913e167fb26c7-snr-blog-37-resized.jpg">
           </a>
           <div class="mt-4">
             <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
@@ -204,7 +188,8 @@
         </div>
         <div class="lg:w-1/3 p-4 w-1/2">
           <a class="block relative h-48 rounded overflow-hidden">
-            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://star-name-registry.com/blog/images/d/0/1/f/a/d01faec7ef04415eec34c1bfe61913e167fb26c7-snr-blog-37-resized.jpg">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+              src="https://star-name-registry.com/blog/images/d/0/1/f/a/d01faec7ef04415eec34c1bfe61913e167fb26c7-snr-blog-37-resized.jpg">
           </a>
           <div class="mt-4">
             <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
@@ -215,10 +200,17 @@
       </div>
     </div>
   </section>
-  
-  <section class="text-gray-600 body-font container px-5 py-12 mx-auto">
-    <div class="container px-5 py-12 mx-auto">
-      <iframe class="container px-5 py-12 mx-auto" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3236.051463525437!2d139.3080776573407!3d35.79866989022005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xded1e01929dfe977!2zMzXCsDQ3JzU1LjIiTiAxMznCsDE4JzM0LjYiRQ!5e0!3m2!1sja!2sjp!4v1640936628378!5m2!1sja!2sjp" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap w-full mb-8">
+        <div class="w-full mb-6 lg:mb-0 text-center">
+          <h1 class="font-semibold text-gray-800 uppercase dark:text-white text-3xl md:mb-5">アクセス</h1>
+          <iframe class="container px-5 py-12 mx-auto"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3236.051463525437!2d139.3080776573407!3d35.79866989022005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xded1e01929dfe977!2zMzXCsDQ3JzU1LjIiTiAxMznCsDE4JzM0LjYiRQ!5e0!3m2!1sja!2sjp!4v1640936628378!5m2!1sja!2sjp"
+            width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
     </div>
   </section>
 
